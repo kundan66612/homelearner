@@ -1,0 +1,368 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.left-heading-logo {
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden; 
+    border-radius: 10%; 
+    margin-left: 10px;
+}
+
+.right-heading-logo {
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden; 
+    border-radius: 10%; 
+}
+
+.center-heading-logo {
+    width: 800px; 
+    height: 250px;  
+}
+
+.company {
+    background-color: #DDFCFC;
+    color: #000000;
+    padding: 10px;
+    font-family: Papyrus;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.logo { 
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    margin-left: 350px;
+} 
+
+.logo img, .left-heading-logo img, .right-heading-logo img {
+     width: auto; 
+     height: 100%;    
+ }
+
+.nav1 {
+    background-color: #A9F4FB;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: #050505;
+    font-family: cursive;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.nav1 a:hover {
+    color: #754372;
+}
+
+h4 {
+    text-align: center; 
+    font-family: cursive; 
+    padding: 5px; 
+    background-color: #A9F4FB;
+    border: 2px solid #030303;
+    border-radius: 10px;
+}
+
+.searchbar-nav {
+    padding: 20px;
+    background-color: #DDFCFC;
+    height: 140px;
+    border: 8px solid #A9F4FB;
+    box-shadow: 2px 2px 10px 2px rgba(10, 0, 0, 10);
+    font-family: cursive;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar select {
+    padding: 10px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+    margin-left: 100px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.category-bar {
+    display: flex;
+    background-color: #A9F4FB;
+    font-weight: bolder;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #FDF990;
+}
+
+.product-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: #DDFCFC;
+    height: 350px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.product-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.product-item {
+    width: 250px;
+    height: 300px;
+    background-color: #FCFCEB;
+    margin:10px 20px 10px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+
+.review-container {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #DDFCFC;
+}
+
+.reviews-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.reviews-container h2 {
+    font-family: cursive;
+    text-align: center;
+}
+
+.reviews {
+    margin-bottom: 20px;
+}
+
+.review-section {
+    padding: 20px;
+}
+
+.user-review {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #36C504;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.teacher-reviews {
+    background-color: #DDFCFC;
+}
+
+.view-more-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.login-panel {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #030303;
+    margin: 0 20px;
+    font-size: 24px;
+}
+        
+.footer-basic {
+    background-color: #A9F4FB;
+    background-size: cover;
+    color: #030303;
+    padding: 20px;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:2px solid #FD0404;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#040404;
+  margin-bottom:0;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.student-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.student-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0C06F9;
+}
+
+.requirement-details {
+    font-size: 15px;
+    color: #050505;
+}
